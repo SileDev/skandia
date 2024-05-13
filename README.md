@@ -22,13 +22,13 @@ npm install -g @angular/cli
 1. Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
 ```
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/SileDev/skandia
 ```
 
 2. Navega al directorio del proyecto:
 
 ```
-cd <NOMBRE_DEL_DIRECTORIO>
+cd skandia
 ```
 
 3. Instala las dependencias del proyecto utilizando npm:
@@ -39,10 +39,12 @@ npm install
 
 ## Ejecución del Servidor
 
-Una vez que hayas instalado todas las dependencias, puedes ejecutar el servidor local. Utiliza el siguiente comando:
+Una vez que hayas instalado todas las dependencias, puedes ejecutar el servidor local y visualizar el proyecto. Utiliza el siguiente comando:
 
 ```
-ng serve
+ng serve -o
 ```
+
+
 
 Este comando compilará el proyecto y ejecutará un servidor de desarrollo. Luego, puedes abrir tu navegador web y navegar a `http://localhost:4200/` para ver la aplicación en funcionamiento.
