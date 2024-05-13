@@ -1,0 +1,46 @@
+<div class="wrapper">
+    <div class="card">
+        <div class="title">
+            <div>
+                <h4>{{goal.name}}</h4>
+                <b>Categoria: {{goal.category}}</b>
+            </div>
+            <a>Revisar objetivo</a>
+        </div>
+        <div  class="info">
+            <div>
+                <span>
+                    <p>
+                        En esta fecha
+                    </p>
+                </span>
+                <b class="date">{{goal.goalDate.getMonth()}}, {{goal.goalDate.getFullYear()}}</b>
+            </div>
+            <div>
+                <span>
+                    <p>
+                        Lograrás
+                    </p>
+                </span>
+                <b class="goal">${{numberUtils.formatNumber(goal.goalAmount.toString())}}</b>
+            </div>
+            <div>
+                <span>
+                    <img src="../../../../../../assets/screens/objectives/star.svg">
+                    <p>
+                        Ya cuentas con
+                    </p>
+                </span>
+                <b class="balance">${{numberUtils.formatNumber(goal.balance.toString())}}</b>
+            </div>
+        </div>
+        <div class="altern">
+            <a (click)="scrollToCards()">
+                <span>
+                    <img src="../../../../../../assets/screens/objectives/check.svg">
+                    <b>¡Asocia productos para monitorear su progreso!</b>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

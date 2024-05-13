@@ -1,0 +1,71 @@
+<header>
+    <div>
+        <i class="las la-bars" (click)="toggleMenu()"></i>
+        <div>
+            <span>
+                <img src="../../../../assets/common/logo.svg" >
+            </span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span>
+                                <img src="../../../../assets/common/header/happy.svg" >
+                                <p>Your Finnancial Planner</p>
+                            </span>
+                        </a>
+                        <a href="">
+                            <span>
+                                <img src="../../../../assets/common/header/hand.svg" >
+                                <p>Contributions</p>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <img src="../../../../assets/common/header/faq.svg" >
+            </nav>
+        </div>        
+    </div>
+    <nav [ngClass]=" {'menu': true, 'open': open}">
+        <ul>
+            <li>
+                <a routerLink="/home" [ngClass]=" {'selected': evaluateIsInroute('home')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/home.svg" >
+                        <p>Home</p>
+                    </span>
+                </a>
+                <a routerLink="/contracts" [ngClass]=" {'selected': evaluateIsInroute('contracts')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/sheet.svg" >
+                        <p>Contracts</p>
+                    </span>
+                </a>
+                <a routerLink="/actions" [ngClass]=" {'selected': evaluateIsInroute('actions')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/money.svg" >
+                        <p>Actions</p>
+                    </span>
+                </a>
+                <a routerLink="/objectives"  [ngClass]=" {'selected': evaluateIsInroute('objectives')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/star.svg" >
+                        <p>Objectives</p>
+                    </span>
+                </a>
+                <a routerLink="/tools"  [ngClass]=" {'selected': evaluateIsInroute('tools')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/tool.svg" >
+                        <p>Tools</p>
+                    </span>
+                </a>
+                <a routerLink="/customer-service"  [ngClass]=" {'selected': evaluateIsInroute('customer-service')}">
+                    <span>
+                        <img src="../../../../assets/common/header/menu/talk.svg" >
+                        <p>Customer Service</p>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
